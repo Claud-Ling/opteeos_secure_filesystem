@@ -1,0 +1,9 @@
+#ifndef TRUSTED_KEY_MANAGER_TA_H
+#define TRUSTED_KEY_MANAGER_TA_H
+
+#define TRUSTED_KEY_MANAGER_UUID { 0xee7a77e9, 0x75bd, 0x4cc3, \
+  {0xa5, 0xea 0xee, 0x42, 0x35, 0xac, 0x2a, 0xfd} }
+
+#define ENCRYPT_VALUE 0
+
+#endif
