@@ -8,8 +8,9 @@ READELF = $(CROSS_COMPILE)readelf
 
 OBJS = filesystem.o
 
-CFLAGS += -Wall -I../ta/include -I$(TEEC_EXPORT)/include -I/usr/include/fuse -D_FILE_OFFSET_BITS=64
-LDADD += -lteec -L$(TEEC_EXPORT)/lib -lfuse
+CFLAGS += -Wall -I../ta/include -I$(TEEC_EXPORT)/include -I/usr/include/fuse -I../fuse_out/include -D_FILE_OFFSET_BITS=64
+
+LDADD += -lteec -L$(TEEC_EXPORT)/lib -lfuse3 -L../fuse_out/lib
 
 .PHONY: all
 all: filesystem

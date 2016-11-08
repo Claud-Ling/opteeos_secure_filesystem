@@ -26,12 +26,12 @@ static int read_callback(const char *path, char *buf, size_t size, off_t offset,
   return 0;
 }
 
-/*static struct fuse_operations operations = {
+static struct fuse_operations operations = {
   .getattr = getattr_callback,
   .open = open_callback,
   .read = read_callback,
   .readdir = readdir_callback,
-};*/
+};
 
 int main(int argc, char *argv[]){
 //  return fuse_main(argc, argv, &operations, NULL);
