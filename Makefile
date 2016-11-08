@@ -31,5 +31,4 @@ clean:
 	make -C host clean
 	make -C ta clean
 	make -C libfuse clean
-	rm -rf fuse_out
-	rm -rf out
+	rm -rf out/fuse_out

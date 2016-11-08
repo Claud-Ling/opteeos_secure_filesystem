@@ -10,8 +10,6 @@ export HOST_CROSS_COMPILE=aarch64-linux-gnu-
 export TA_CROSS_COMPILE=arm-linux-gnueabihf-
 export LIBFUSE_HOST=aarch64-linux-gnu
 
-cd /home/michael/hardware_security/opteeos_secure_filesystem
-
 mkdir -p out/
 
 make O=./out HOST_CROSS_COMPILE=$HOST_CROSS_COMPILE TA_CROSS_COMPILE=$TA_CROSS_COMPILE LIBFUSE_HOST=$LIBFUSE_HOST $@
