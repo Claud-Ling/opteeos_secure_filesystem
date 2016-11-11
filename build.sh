@@ -7,9 +7,10 @@ export TA_DEV_KIT_DIR="/home/michael/hardware_security/rasperrypi_3_optee/rpi/op
 export TEEC_EXPORT="/home/michael/hardware_security/rasperrypi_3_optee/rpi/optee_client/out/export"
 
 export HOST_CROSS_COMPILE=aarch64-linux-gnu-
-export TA_CROSS_COMPILE=arm-linux-gnueabihf-
+export TA_CROSS_COMPILE=aarch64-linux-gnu-
+#arm-linux-gnueabihf-
 export LIBFUSE_HOST=aarch64-linux-gnu
 
 mkdir -p out/
 
-make O=./out HOST_CROSS_COMPILE=$HOST_CROSS_COMPILE TA_CROSS_COMPILE=$TA_CROSS_COMPILE LIBFUSE_HOST=$LIBFUSE_HOST $@
+make O=./out HOST_CROSS_COMPILE=$HOST_CROSS_COMPILE TA_CROSS_COMPILE=$TA_CROSS_COMPILE LIBFUSE_HOST=$LIBFUSE_HOST TA_DEV_KIT_DIR=$TA_DEV_KIT_DIR TEEC_EXPORT=$TEEC_EXPORT $@

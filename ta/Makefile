@@ -4,7 +4,7 @@ BINARY=ee7a77e9-75bd-4cc3-a5eaee4235ac2afd
 
 include $(TA_DEV_KIT_DIR)/mk/ta_dev_kit.mk
 
-all: $(BINARY).ta
+all: out/$(BINARY).ta
 
 clean: clean_ta_file
 

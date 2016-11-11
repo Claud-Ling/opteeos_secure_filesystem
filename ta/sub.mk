@@ -1,2 +1,2 @@
 global-incdirs-y += include
-srcs-y += hello_world_ta.c
+srcs-y += trusted_key_manager_ta.c

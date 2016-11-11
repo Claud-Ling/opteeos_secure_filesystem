@@ -24,7 +24,7 @@ host: fuse
 
 .PHONY: ta
 ta:
-	make -C ta CROSS_COMPILE=$(TA_CROSS_COMPILE)
+	make -C ta CROSS_COMPILE=$(TA_CROSS_COMPILE) TEEC_EXPORT=$(TEE_EXPORT) TA_DEV_KIT_DIR=$(TA_DEV_KIT_DIR)
 
 .PHONY: clean
 clean:
